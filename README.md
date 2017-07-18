@@ -2,15 +2,15 @@ Word Search Kata
 ================
 In this exercise you will build a program to complete a [word search](https://en.wikipedia.org/wiki/Word_search) problem.
 
-Given a CSV text file consisting of a list of words, and a series of rows of single-character lists representing the word search grid, this program should search for the words in the grid and return a set of x,y coordinates for each word found.
+Given a text file consisting of a list of words, and a series of rows of single-character lists representing the word search grid, this program should search for the words in the grid and return a set of x,y coordinates for each word found.
 
 The point of this kata to to provide an larger than trivial exercise that can be used to practice TDD. A significant portion of the effort will be in determining what tests should be written and, more importantly, written next.
 
 ## Input ##
 
-The first line of the CSV file will consist of the list of words to be found.  The following lines will consist of a list of single characters, A-Z. All lines in the file except the first will have the same length, and the number of rows will match the number of characters in a line.  This input represents the square grid of the word search.
+The first line of the text file will consist of the list of words to be found.  The following lines will consist of a list of single characters, A-Z. All lines in the file except the first will have the same length, and the number of rows will match the number of characters in a line.  This input represents the square grid of the word search.
 
-The grid will always be square, and all words in the list will always be present in the grid. Words may be located horizontally, vertically, diagonally, and both forwards and backwards.  Words will never "wrap" around the edges of the grid. 
+The grid will always be square, and all words in the list will always be present in the grid. Words may be located horizontally, vertically, diagonally, and both forwards and backwards.  Words will never "wrap" around the edges of the grid.
 
 The following is an example of the format of the input file:
 
@@ -48,5 +48,23 @@ SULU: (3,3),(2,2),(1,1),(0,0)
 UHURA: (4,0),(3,1),(2,2),(1,3),(0,4)
 </pre>
 
-### Tips ###
+## User Stories ##
+*As the Puzzle Solver*<br />
+*I want to search horizontally*<br />
+*So that I can find words on the X axis*<br />
+
+*As the Puzzle Solver*<br />
+*I want to search vertically*<br />
+*So that I can find words on the Y axis*<br />
+
+*As the Puzzle Solver*<br />
+*I want to search diagonally descending*<br />
+*So that I can find words the descend along the X axis*<br />
+
+*As the Puzzle Solver*<br />
+*I want to search diagonally ascending*<br />
+*So that I can find words that ascend along the X axis*<br />
+
+
+## Tips ##
 If you need to generate test data there are many sites which will generate puzzles for you, such as [this one](http://puzzlemaker.discoveryeducation.com/WordSearchSetupForm.asp?campaign=flyout_teachers_puzzle_wordcross).
