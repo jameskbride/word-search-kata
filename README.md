@@ -65,6 +65,17 @@ UHURA: (4,0),(3,1),(2,2),(1,3),(0,4)
 *I want to search diagonally ascending*<br />
 *So that I can find words that ascend along the X axis*<br />
 
+*As the Puzzle Solver*<br />
+*I want to search backwards*<br />
+*So that I can find words in reverse along all axises*<br />
 
-## Tips ##
-If you need to generate test data there are many sites which will generate puzzles for you, such as [this one](http://puzzlemaker.discoveryeducation.com/WordSearchSetupForm.asp?campaign=flyout_teachers_puzzle_wordcross).
+## FAQ ##
+
+*It looks hard to generate test data.  How can do do this easily?*<br />
+* If you need to generate test data there are many sites which will generate puzzles for you, such as [this one](http://puzzlemaker.discoveryeducation.com/WordSearchSetupForm.asp?campaign=flyout_teachers_puzzle_wordcross).
+
+*How large can the grid be?*<br />
+* Big or small, this is really up to you as long as you remember that the grid will always be square and that your solution should meet the requirements described above. This question is really outside the scope of the kata; the point is to focus on Test-Driving and software craftsmanship.
+
+*How long or short can the words be?*<br />
+* Words will be a minimum of two letters long, and will always fit within the grid along the axis on which it can be located.
